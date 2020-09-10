@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Calendar</title>
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main">
+        <div class="birthday-calendar">
+            <div class="title">
+                Birthday Cal
+            </div>
+            <div class="calendar-wrapper">
+                <div class="day-of-week-wrapper">
+                    <div class="day-of-week">
+                        MON
+                    </div>
+                    <div id="monday" class="birthdays-wrapper">
+
+                    </div>
+                </div>
+                <div class="day-of-week-wrapper">
+                    <div class="day-of-week">
+                        TUE
+                    </div>
+                    <div id="tuesday" class="birthdays-wrapper">
+
+                    </div>
+                </div>
+                <div class="day-of-week-wrapper">
+                    <div class="day-of-week">
+                        WED
+                    </div>
+                    <div id="wednesday" class="birthdays-wrapper">
+
+                    </div>
+                </div>
+                <div class="day-of-week-wrapper">
+                    <div class="day-of-week">
+                        THU
+                    </div>
+                    <div id="thursday" class="birthdays-wrapper">
+
+                    </div>
+                </div>
+                <div class="day-of-week-wrapper">
+                    <div class="day-of-week">
+                        FRI
+                    </div>
+                    <div id="friday" class="birthdays-wrapper">
+
+                    </div>
+                </div>
+                <div class="day-of-week-wrapper">
+                    <div class="day-of-week">
+                        SAT
+                    </div>
+                    <div id="saturday" class="birthdays-wrapper">
+
+                    </div>
+                </div>
+                <div class="day-of-week-wrapper">
+                    <div class="day-of-week">
+                        SUN
+                    </div>
+                    <div id="sunday" class="birthdays-wrapper">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="input-area-wrapper">
+            <div class="json-text-area">
+                <textarea id="namesAndBirthdays" name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="enter-year-wrapper">
+                <div class="title">
+                    Year
+                </div>
+                <div class="year">
+                    <input type="number" name="" id="birthday-year" onkeyup="setUpdateButtonState()" minlength="4"
+                        maxlength="4">
+                </div>
+                <button class="update-cta" disabled="true" onclick="populateNamesAndBirthdaysDayWise()">UPDATE</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
