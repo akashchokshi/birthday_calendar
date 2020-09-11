@@ -1,143 +1,141 @@
 * {
-    box-sizing: border-box;
-    font-family: Roboto;
+  box-sizing: border-box;
+  font-family: Roboto;
 }
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 /* remove increase decrease arrows */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 #main {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-color: #eaf0f2;
-    padding: 50px;
-    overflow-y: scroll;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #eaf0f2;
+  padding: 50px;
+  overflow-y: scroll;
 }
 #main .birthday-calendar {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 #main .design {
-    background-image: url(assets/images/design.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #dde3e5;
-    width: 100%;
-    min-height: 500px;
+  background-image: url(assets/images/design.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #dde3e5;
+  width: 100%;
+  min-height: 500px;
 }
 #main .birthday-calendar .title {
-    text-align: center;
-    font-size: 40px;
-    font-weight: 100;
-    color: #63727f;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 100;
+  color: #63727f;
 }
 #main .birthday-calendar .calendar-wrapper {
-    height: 215px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 60px;
+  height: 215px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
 }
 #main .birthday-calendar .calendar-wrapper .day-of-week-wrapper {
-    flex-basis: 13.5%;
+  flex-basis: 13.5%;
 }
 #main .birthday-calendar .calendar-wrapper .day-of-week {
-    background-color: #ab9eee;
-    height: 35px;
-    color: #ffffff;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 15px;
-    font-size: 14px;
-    font-weight: 400;
-    border-radius: 5px 5px 0px 0px;
+  background-color: #ab9eee;
+  height: 35px;
+  color: #ffffff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 15px;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 5px 5px 0px 0px;
 }
 #main .birthday-calendar .calendar-wrapper .birthdays-wrapper {
-    height: 180px;
-    background-color: #ffffff;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: baseline;
-    border: 1px solid lightgray;
-    border-top: none;
+  height: 180px;
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: baseline;
+  border: 1px solid lightgray;
+  border-top: none;
 }
 #main .birthday-calendar .calendar-wrapper .birthdays-wrapper.has-birthday {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 #main .birthday-calendar .calendar-wrapper .birthdays-wrapper.has-no-birthday {
-    background-image: url(assets/images/no-birthday.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #dde3e5;
+  background-image: url(assets/images/no-birthday.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #dde3e5;
 }
-
 #main .birthday-calendar .calendar-wrapper .birthdays-wrapper.has-birthday div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: thistle;
-    color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
 }
 .input-area-wrapper {
-    margin-top: 50px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 .input-area-wrapper .json-text-area {
-    width: 60%;
+  width: 60%;
 }
 .input-area-wrapper .json-text-area textarea {
-    width: 100%;
-    height: 300px;
-    border: 1px solid lightgray;
-    border-radius: 5px;
+  width: 100%;
+  height: 300px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
 }
 .input-area-wrapper .enter-year-wrapper {
-    width: 40%;
-    padding-left: 50px;
+  width: 40%;
+  padding-left: 50px;
 }
 .input-area-wrapper .enter-year-wrapper .title {
-    font-size: 18px;
-    color: #5e6e7a;
+  font-size: 18px;
+  color: #5e6e7a;
 }
 .input-area-wrapper .enter-year-wrapper .year {
-    margin-top: 10px;
-    height: 50px;
+  margin-top: 10px;
+  height: 50px;
 }
 .input-area-wrapper .enter-year-wrapper .year input {
-    height: 100%;
-    width: 80%;
-    border: 1px solid lightgray;
-    font-size: 18px;
-    padding-left: 10px;
-    color: #3e3e3e;
-    outline: none;
-    border-radius: 5px;
+  height: 100%;
+  width: 80%;
+  border: 1px solid lightgray;
+  font-size: 18px;
+  padding-left: 10px;
+  color: #3e3e3e;
+  outline: none;
+  border-radius: 5px;
 }
 .input-area-wrapper .enter-year-wrapper .update-cta {
-    margin-top: 25px;
-    width: 165px;
-    height: 60px;
-    border: none;
-    outline: none;
-    font-size: 20px;
-    color: #ffffff;
-    background-color: #2586ef;
-    cursor: pointer;
-    opacity: 1;
-    border-radius: 5px;
+  margin-top: 25px;
+  width: 165px;
+  height: 60px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #2586ef;
+  cursor: pointer;
+  opacity: 1;
+  border-radius: 5px;
 }
 .input-area-wrapper .enter-year-wrapper .update-cta:disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
+  cursor: not-allowed;
+  opacity: 0.5;
 }
